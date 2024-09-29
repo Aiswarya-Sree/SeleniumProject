@@ -10,7 +10,7 @@ public class Locators extends Base {
 		WebElement message1 = driver.findElement(By.id("inlineRadio22"));
 		WebElement message2 = driver.findElement(By.id("inlineRadio23"));
 		WebElement message3 = driver.findElement(By.id("single-input-field"));
-		WebElement message4 = driver.findElement(By.id("validationCustomUsername"));)
+		WebElement message4 = driver.findElement(By.id("validationCustomUsername"));
 	}
 /*webelement is interfce
 	findelement=is method
