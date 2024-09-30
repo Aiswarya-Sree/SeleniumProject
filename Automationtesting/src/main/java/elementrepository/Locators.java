@@ -28,7 +28,45 @@ public class Locators extends Base {
 		
 	}
 	
+	public void locating_by_name()
+	{
 	
+		WebElement message = driver.findElement(By.name("viewport"));
+		
+	}
+	
+	public void locating_by_linktext()
+	{
+		WebElement message = driver.findElement(By.linkText("check-box-demo.php"));
+	}
+	
+	public void locating_by_partiallinktext()
+	{
+	
+		WebElement message= driver.findElement(By.partialLinkText("simple-form"));
+	}
+	
+	//CSS SELECTOR
+	
+	public void tag_id()  //tag & ID - syntax tag#id
+	{
+		WebElement message =driver.findElement(By.cssSelector("input#single-input-field"));
+	}
+	
+	public void tag_class() //tag & class - syntax tag.class
+	{
+		WebElement messgae = driver.findElement(By.cssSelector("input.form-check-input"));
+	}
+	public void tag_attribute() //tag & attribute -syntax tag[attribute=value]
+	{
+		WebElement message = driver.findElement(By.cssSelector("input[placeholder=State]"));
+		
+	}
+	
+	public void tag_class_attribute() // tag & class & attribute -syntax tag.classname[attribute=value]
+	{
+		WebElement message = driver.findElement(By.cssSelector("input.form-control[placeholder=State]"));
+	}
 	public static void main(String[] args) {
 		
 
